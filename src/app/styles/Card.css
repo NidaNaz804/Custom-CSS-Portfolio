@@ -1,0 +1,87 @@
+.card-container {
+    border: 2px solid #dc2626 ;
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+    animation: fadeInSlideUp 1s ease-out;
+  }
+  
+  .card-image {
+    width: 100%;
+    animation: fadeInSlideUp 1.2s ease-out;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    animation: fadeInSlideUp 1.5s ease-out;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+  
+  .tag {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    display: inline-block;
+  }
+  
+  /* Specific colors for each tag */
+  .tag-typescript {
+    background-color: #0abde3;
+    color: white;
+  }
+  
+  .tag-react {
+    background-color: #a55eea;
+    color: white;
+  }
+  
+  .tag-node {
+    background-color: #eb4d4b;
+    color: white;
+  }
+  
+  .tag-CSS {
+    background-color: #db9f10;
+    color: white;
+  }
+  
+  .tag-default {
+    background-color: #f1f1f1;
+    color: #555;
+  }
+
+  /* Keyframe for fade-in and slide-up effect */
+@keyframes fadeInSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

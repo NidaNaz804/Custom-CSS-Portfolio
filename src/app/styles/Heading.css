@@ -1,0 +1,26 @@
+.heading-container {
+    text-align: center;
+    padding-bottom: 2rem;
+    animation: fadeIn 1s ease-out;
+  }
+  
+ .heading-title {
+    font-size: 2.25rem;
+    display: inline-block;
+    border-bottom: 4px solid #000;
+    padding-bottom: 0.5rem;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  /* Keyframe for fade-in effect */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

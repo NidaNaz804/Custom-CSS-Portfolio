@@ -1,0 +1,97 @@
+/* General Navbar Styling */
+.navbar {
+  background-color: #000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo Styling */
+.navbar-logo {
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Desktop Links */
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.menuLink {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.menuLink:hover {
+  color: #f00;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+  display: none;
+}
+
+.icon {
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  background-color: #000;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-links {
+  list-style: none;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.mobile-links .menuLink {
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

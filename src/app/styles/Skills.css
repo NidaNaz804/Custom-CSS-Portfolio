@@ -1,0 +1,84 @@
+/* Skills.css */
+.skills-container {
+  padding-top: 8rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.skills-text {
+  color: #ffffff;
+}
+
+.skills-title {
+  margin-bottom: 1.5rem;
+  animation: fadeInRight 1s ease-in-out;
+}
+
+.skills-description {
+  color: #b3b3b3;
+  line-height: 1.75;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.skills-list {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.skills-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #b22222;
+}
+
+.skills-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

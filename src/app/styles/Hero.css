@@ -1,0 +1,60 @@
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    background: url('/potfolio-pic.jpg') no-repeat left center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Adjust for larger screens */
+  @media (min-width: 1024px) {
+    .hero-section {
+      background-position: 15% center; 
+      background-size: 35%; 
+    }
+  }
+  
+  /* Inner container in Hero section */
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: calc(100vh - 60px);
+    padding: 3rem 0;
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Text styling */
+  .hero-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  @media (min-width: 640px) {
+    .hero-text {
+      font-size: 5rem; 
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
